@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { App } from './components/App'
+import { Navigator } from './navigator'
 import { theme } from './theme'
 
 global.XMLHttpRequest = global.originalXMLHttpRequest
@@ -11,7 +11,7 @@ export class Root extends Component {
     render() {
         return (
             <ThemeProvider theme={theme}>
-                <App />
+                <Navigator />
             </ThemeProvider>
         )
     }
